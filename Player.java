@@ -45,9 +45,9 @@ public class Player
         health -= damage;
     }
 
-    void attack(Enemy e)
+    public void attack(Enemy e)
     {
-        int damageDealt = (int) Math.random()*5+1;
+        int damageDealt = (int) (Math.random()*5)+1;
         e.takeDamage(damageDealt);
     }
 

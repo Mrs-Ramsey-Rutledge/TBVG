@@ -19,7 +19,7 @@ public class Enemy {
 
     public boolean isAlive()
     {
-        if (health > 5)
+        if (health > 0)
         {
             return true;
         }
