@@ -56,6 +56,4 @@ public class Player
         currentRoom = r;
     }
 
-
-
 }

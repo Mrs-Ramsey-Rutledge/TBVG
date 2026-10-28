@@ -2,12 +2,10 @@ package TBVG;
 
 public class Enemy {
     private int health;
-    private Room currentRoom;
     private String description;
 
-    public Enemy(Room r)
+    public Enemy()
     {
-        currentRoom = r;
         health = 5;
         description = "a spooky, scary skeleton";
     }
@@ -19,12 +17,7 @@ public class Enemy {
 
     public boolean isAlive()
     {
-        if (health > 0)
-        {
-            return true;
-        }
-        else 
-            return false;
+        return (health > 0);
     }
 
     public void attack(Player p)

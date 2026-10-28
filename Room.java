@@ -7,12 +7,6 @@ public class Room {
     private Enemy enemy;
     private Room northRoom, southRoom, westRoom, eastRoom;
 
-    // null room
-    public Room()
-    {
-        description = "This room does not exist";
-    }
-
     // constructor
     public Room(String description, boolean hasTreasure, boolean hasEnemy)
     {

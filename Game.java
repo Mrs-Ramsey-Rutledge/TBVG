@@ -17,7 +17,7 @@ public class Game
         e = new Room("The room looks like an old prison. Skeletons are shackled to the walls. There are no new doors.",false,true);
         w = new Room("The room has a lot of moss. There are no new doors.",false,true);
         startingRoom = new Room(startingRoomDescription, false, false);
-        finalRoom = new Room(finalRoomDescription, true, true);
+        finalRoom = new Room(finalRoomDescription, true, false);
 
         // Connecting rooms
         startingRoom.setNeighbors(n, s, e, w);
@@ -28,15 +28,15 @@ public class Game
         finalRoom.setNeighbors(null, n, null, null);
 
         // Adding enemies into map
-        Enemy nSkeleton = new Enemy(n);
+        Enemy nSkeleton = new Enemy();
         n.setEnemy(nSkeleton);
-        Enemy sSkeleton = new Enemy(s);
+        Enemy sSkeleton = new Enemy();
         s.setEnemy(sSkeleton);
-        Enemy eSkeleton = new Enemy(e);
+        Enemy eSkeleton = new Enemy();
         e.setEnemy(eSkeleton);
-        Enemy wSkeleton = new Enemy(w);
+        Enemy wSkeleton = new Enemy();
         w.setEnemy(wSkeleton);
-        Enemy fSkeleton = new Enemy(finalRoom);
+        Enemy fSkeleton = new Enemy();
         finalRoom.setEnemy(fSkeleton);
 
         // Welcome Statement
@@ -189,5 +189,3 @@ public class Game
         input.close();
     }
 }
-
-
