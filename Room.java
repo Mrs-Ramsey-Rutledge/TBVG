@@ -22,6 +22,10 @@ public class Room {
     public void setEnemy(Enemy e)
     {
         this.enemy = e;
+        if (enemy==null)
+        {
+            hasEnemy = false;
+        }
     }
 
     public Enemy getEnemy()
